@@ -22,13 +22,12 @@
 	
     [REPLACE MY INFORMATION WITH YOURS]
     Course: COMP 170, Spring I 2023
-    System: Visual Studio Code, Windows 10
-    Author: C. Fulton
+    System: Visual Studio Code, Mac OS
+    Author: Michael Dreis
 */
 import java.util.Scanner; //Scanner Class imported
-//import java.lang.Integer;
 
-import javax.swing.event.SwingPropertyChangeSupport;
+
 
 public class Calories {
     public static void main(String[] args) throws Exception {
@@ -63,7 +62,7 @@ public class Calories {
         //OUTPUT DATA TO CONSOLE
         System.out.println(userName + " your caloric intake of Garrett's Popcorn is listed below:");
         System.out.println("*****************************************************************************");
-        System.out.println(userCups + " cup(s) equtes to " + totalCalories + " calories");
+        System.out.println(userCups + " cup(s) equates to " + totalCalories + " calories");
         System.out.println(userCups + " cup(s) equates to " + totalGrams + " grams consumed");
         System.out.println("Of the " + totalCalories + " calories - " + totalFatCalories + " are from fat");
 
