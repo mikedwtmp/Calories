@@ -48,9 +48,9 @@ public class Calories {
 
         //INPUT AND OUTPUT (Use wording found in .gif video on README.md )
         Scanner scn = new Scanner(System.in);
-        System.out.println("To get started, please enter the total number of popcorn cups consumed: ");
+        System.out.print("To get started, please enter the total number of popcorn cups consumed: ");
         userCups = Integer.parseInt(scn.nextLine());
-        System.out.println("Please enter your name: ");
+        System.out.print("Please enter your name: ");
         userName = scn.nextLine();
 
         //MAKE CALCULATIONS
