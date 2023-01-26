@@ -22,7 +22,7 @@
 	
     [REPLACE MY INFORMATION WITH YOURS]
     Course: COMP 170, Spring I 2023
-    System: Visual Studio Code, Mac OS
+    System: Visual Studio Code, Mac OS 13.0.1 
     Author: Michael Dreis
 */
 import java.util.Scanner; //Scanner Class imported
@@ -41,17 +41,18 @@ public class Calories {
         final int CALORIES_PER_CUP = 150;
         final int CALORIES_FROM_FAT = 54;
         final int GRAMS_PER_CUP = 30;
+        Scanner scn = new Scanner(System.in);
 
         //INTRODUCTION
         System.out.println("Welcome to the Garrett's Popcorn Calorie Tracker!  This program will allow you to enter the total number of cups of Garrett's popcorn and provide you with the total number of calories consumed, the breakdown of calories from fat and the total number of grams per cup consumed.");
         System.out.println(" ");
 
         //INPUT AND OUTPUT (Use wording found in .gif video on README.md )
-        Scanner scn = new Scanner(System.in);
-        System.out.print("To get started, please enter the total number of popcorn cups consumed: ");
+        System.out.print("To get started, please enter the total number of cups of popcorn consumed: ");
         userCups = Integer.parseInt(scn.nextLine());
         System.out.print("Please enter your name: ");
         userName = scn.nextLine();
+        System.out.println("");
 
         //MAKE CALCULATIONS
         totalCalories = userCups * CALORIES_PER_CUP;
@@ -61,10 +62,10 @@ public class Calories {
 
         //OUTPUT DATA TO CONSOLE
         System.out.println(userName + " your caloric intake of Garrett's Popcorn is listed below:");
-        System.out.println("*****************************************************************************");
+        System.out.println("*****************************************************************");
         System.out.println(userCups + " cup(s) equates to " + totalCalories + " calories");
         System.out.println(userCups + " cup(s) equates to " + totalGrams + " grams consumed");
-        System.out.println("Of the " + totalCalories + " calories - " + totalFatCalories + " are from fat");
+        System.out.println("Out of " + totalCalories + " calories - " + totalFatCalories + " is calories from fat");
 
         scn.close();
 
